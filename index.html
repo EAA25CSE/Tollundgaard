@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tollundgaard golfklub</title>
+    <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="images/header/logo-hvid.png" alt="Tollundgaard golfklub Logo"></a>
+        <a href="index.html"><img id="logo2" src="images/header/logo-hvid-mobil.png" alt="Tollundgaard golfklub Logo"></a>
+
+        <nav id="laptopnav">
+            <a href="blivmedlem.html">Bliv medlem</a>
+            <a href="klubben.html">Klubben</a>
+            <a href="blivklaedtpaa.html">Kom godt igang</a>
+            <a href="banen.html">Banen</a>
+            <a href="bestyrelsen.html">Bestyrelsen</a>
+        </nav>
+        <nav id="mobilnav">
+            <a href="blivmedlem.html">Bliv medlem</a>
+            <a href="klubben.html">Klubben</a>
+            <a href="blivklaedtpaa.html">Kom godt igang</a>
+            <a href="banen.html">Banen</a>
+            <a href="bestyrelsen.html">Bestyrelsen</a>
+        </nav>
+        <img id="burgericon" src="images/header/burgericon.svg" alt="Burger Icon">
+    </header>
+    <main>
+        <div class="video-container">
+            <video class="video" width="100%" autoplay muted loop>
+                <source src="images/landingpage/video.mp4" type="video/mp4" /> 
+            </video>
+            <div class="cta-buttons">
+                <a href="#">Book din tid</a>
+                <a href="blivmedlem.html">Bliv medlem</a>
+            </div>
+            <div class="arrow-down">↓</div>
+        </div>
+        <section class="greenframe"> </section>
+        <section class="velkomst">
+            <h1>Velkommen til<br>Tollundgaard Golfklub</h1>
+            <p>Hos os er golf mere end et spil – det er fællesskab, natur og nærvær. Vores hyggelige 9-hullers bane <br>midt i Søhøjlandet inviterer til afslapning, uanset om du er ny i golf eller har spillet i mange år. <br><br>Her er der plads til alle – også dig.</p>
+        </section>
+        <br>
+        <section class="intro">
+            <div class="text-column">
+              <h2>Begyndervenlig golfklub</h2><br>
+              <p>Hos Tollundgaard Golfklub gør vi det nemt at komme i gang med golf.</p>
+              <p>Du behøver hverken erfaring, udstyr eller medlemskab for at prøve kræfter med spillet.</p>
+              <p>Her handler det om ro, hygge og gode oplevelser.</p>
+              <br><br><br>
+              <a href="blivklaedtpaa.html" class="read-more-btn">Læs mere ></a>
+            </div><br>
+            <div class="image-column">
+              <img src="images/landingpage/begynder.JPG" alt="Golf intro billede">
+            </div>
+          </section>
+          <section class="info-cards">
+            <div class="card">
+              <img src="images/Icon/golf-hvid.png" alt="Golf ikon">
+              <h3>Bliv medlem</h3>
+              <p>Find information om medlemskaber her.</p>
+              <a href="blivmedlem.html">Læs mere ></a>
+            </div>
+          
+            <div class="card">
+              <img src="images/Icon/golf (1)-hvid.png" alt="Klub ikon">
+              <h3>Klubben</h3>
+              <p>Find information om vores klub her.</p>
+              <a href="klubben.html">Læs mere ></a>
+            </div>
+          
+            <div class="card">
+              <img src="images/Icon/golf-player-hvid.png" alt="Golfspiller ikon">
+              <h3>Kom godt i gang</h3>
+              <p>Læs mere om at komme godt i gang med sporten her.</p>
+              <a href="komgodtigang.html">Læs mere ></a>
+            </div>
+          </section>
+    </main>
+    <footer class="footer">
+        <img src="images/footer/footer.jpg" alt="Golfbane baggrund" class="footer-bg">
+        <div class="footer-overlay">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3>Tollundgaard Golfklub</h3>
+              
+              <p>Tollundvej 3<br>8600 Silkeborg</p>
+              <p><strong>Kontakt os</strong><br>86 85 10 08<br>info@tollundgaardgolf.dk</p>
+            </div>
+      
+            <div class="footer-column">
+              <h3>Information</h3>
+              <br>
+                <a href="#">Generelle turneringsbetingelser</a>
+                <br><br>
+                <a href="#">Handelsbetingelser</a>
+                <br><br>
+                <a href="#">Privatpolitik</a>
+            </div>
+      
+            <div class="footer-column">
+              <h3>Find os på:</h3>
+              <a href="https://facebook.com" target="_blank" class="fb-icon">
+                <img src="images/footer/facebook.png" alt="Facebook" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        const burger = document.getElementById('burgericon');
+        const menu = document.getElementById('mobilnav');
+    
+        burger.addEventListener('click', () => {
+          menu.classList.toggle('active');
+        });
+    
+        const links = document.querySelectorAll('#mobilnav a');
+    
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+            menu.classList.remove('active');
+          });
+        });
+      </script>
+</body>
+</html>

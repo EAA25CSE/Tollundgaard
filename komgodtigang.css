@@ -1,0 +1,566 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Header pic */
+.komgodtigang {
+    max-width: 100%;
+    height: auto;
+}
+.header-title {
+    position: absolute;
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white; /* Make the text visible */
+    font-size: 4rem; /* Adjust font size as needed */
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Info Cards */
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    margin-top: -225px;
+  }
+  
+  .card {
+    background-color: #2e4a2d;
+    color: white;
+    width: 250px;
+    height: 400px;
+    padding: 30px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 120px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 55px;
+    margin-top: 25px;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    padding: 0%;
+  }
+  
+  .card a {
+    margin-top: auto;
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card a:hover {
+    background-color: white;
+    color: #2e4a2d;
+  }
+  /* Golf for begynder */
+  .golf-for-begyndere h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #2e4a2d;
+  }
+
+  .golf-for-begyndere p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+   padding-left: 100px;
+   padding-right: 100px;
+   line-height: 1.8;
+  }
+
+    /* Fitty-fitty */
+
+    .pay-and-play-card {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 1rem;
+        background-color: white;
+      }
+
+      
+      .card-content {
+        display: flex;
+        max-width: 1100px;
+        background: #fefbf7;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      
+      .text-content {
+        flex: 1;
+        padding: 2rem;
+      }
+      
+      .text-content h2 {
+        font-size: 2rem;
+        color: #3d5a40;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      
+      .text-content p {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+        color: #000;
+        width: 100%;
+        text-align: center;
+        
+      }      
+      .range-card {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 1rem;
+        background-color: white;
+      }
+
+      .card-content-range {
+        display: flex;
+        max-width: 1100px;
+        background: #fefbf7;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      
+      .text-content-range {
+        flex: 1;
+        padding: 2rem;
+      }
+      
+      .text-content-range h2 {
+        font-size: 2rem;
+        color: #3d5a40;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      
+      .text-content-range p {
+        font-size: 15px;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+        color: #000;
+        width: 100%;
+        text-align: center;
+      }  
+      .udstyr-card {
+        display: flex;
+        justify-content: center;
+        padding: 4rem 1rem;
+        background-color: white;
+      }
+
+      .card-content-udstyr {
+        display: flex;
+        max-width: 1100px;
+        background: #fefbf7;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      
+      .text-content-udstyr {
+        flex: 1;
+        padding: 2rem;
+      }
+      
+      .text-content-udstyr h2 {
+        font-size: 2rem;
+        color: #3d5a40;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      
+      .text-content-udstyr p {
+        font-size: 15px;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+        color: #000;
+        width: 100%;
+        text-align: center;
+      } 
+      
+      .cta-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border: 2px solid #3d5a40;
+        color: #3d5a40;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: background 0.2s ease;
+        margin-left: 195px;
+      }
+      
+      .cta-button:hover {
+        background-color: #3d5a40;
+        color: #fff;
+      }
+      
+      .image-content {
+        flex: 1;
+        max-height: 100%;
+      }
+      
+      .image-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+
+        /* Golfkøller */
+      
+    
+        .club-guide {
+          display: flex;
+          flex-direction: column;
+          align-items: top;
+          justify-content: center;
+          gap: 20px;
+          padding: 20px;
+          max-width: 80%;
+          margin: 0 auto;
+        }
+    
+        .club-guide h2 {
+          font-size: 2.5rem;
+          margin-bottom: 50px;
+          color: #2e472f;
+          text-align: center;
+        }
+    
+        .grid {
+          display: grid;
+          gap: 20px;
+          grid-template-columns: repeat(3, 1fr);
+          width: 100%;
+          justify-content: space-between;
+        }
+    
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          max-width: 600px;
+        }
+    
+        .item img {
+          height: 60px;
+          margin-bottom: 15px;
+        }
+    
+        .item, h3 {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+          
+        }
+    
+        .item p {
+          justify-content: center;
+          width: 100%;
+          font-size: 1rem; /* Adjust font size */
+          line-height: 1.5; /* Improve readability */
+          margin: 0; /* Remove unnecessary margins */
+          word-break: normal; /* Prevent breaking words unnecessarily */
+          white-space: normal; /* Allow text to wrap naturally */
+          text-align: center; /* Optional: Align text to the left */
+      }
+
+      /* awards */
+
+      .awards {
+        text-align: center;
+        padding: 4rem 2rem;
+        background-color: #fff;
+        margin-top: -75px;
+      }
+      
+      .awards-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        color: #2e472f;
+      }
+      
+      .award-items {
+        display: flex;
+        justify-content: center;
+        gap: 6rem;
+        flex-wrap: wrap;
+      }
+      
+      .award-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+      }
+      
+      
+      .award-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0.5rem 0;
+      }
+      
+      .award-description {
+        font-size: 1rem;
+        color: #333;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+      .priser {
+        padding: 60px 20px;
+        background-color: white;
+        text-align: center;
+      }
+      
+      .priser h1 {
+        font-size: 2.5rem;
+        color: #3d5a40;
+        margin-bottom: 2rem;
+      }
+      
+      .priser-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+      }
+      
+      .pris-item h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      
+      .pris-item p {
+        font-size: 1rem;
+        margin: 0;
+        color: black;
+      }
+      /* faq */
+      .faq-section {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+        font-family: Arial, sans-serif;
+      }
+      
+      .faq-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      .faq-box {
+        border-top: 1px solid #333;
+      }
+      
+      .faq-question {
+        width: 100%;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: left;
+        padding: 1rem 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #3d5a40;
+      }
+      
+      .faq-question .icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .faq-box.open .icon {
+        transform: rotate(45deg);
+      }
+      
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        padding: 0 0;
+        font-size: 1rem;
+      }
+      
+      .faq-box.open .faq-answer {
+        max-height: 300px;
+        padding: 0 0 1rem 0;
+      }
+      
+      .faq-btn {
+        display: inline-block;
+        margin-bottom: 1rem;
+        margin-top: 0.5rem;
+        padding: 0.4rem 1rem;
+        border: 2px solid #3d5a40;
+        background: #fff;
+        text-decoration: none;
+        color: #3d5a40;
+      }
+      .faq-btn:hover {
+        background: #3d5a40;
+        color: #fff;
+      }
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        .header-title{
+          font-size: 2rem; 
+        }
+        .info-cards {
+            flex-direction: row; 
+            align-items: center; 
+            padding: 20px 10px; 
+            margin-top: -75px;
+        }
+        .card{
+          width: 145px;
+          height: 270px;
+          padding: 15px 10px;
+        }
+        .card img {
+            width: 80px; /* Adjust image size for smaller screens */
+            height: auto;
+            margin-bottom: 20px; /* Adjust margin for smaller screens */
+            margin-top: 10px; /* Adjust margin for smaller screens */
+        }
+        .card h3 {
+            font-size: 1rem; /* Adjust font size for smaller screens */
+            text-align: center;
+            margin-left: 10px;
+        }
+        .card p {
+            font-size: 0.8rem; /* Adjust font size for smaller screens */
+            margin-left: 10px;
+        }
+        .card a {
+            padding: 5px 10px; /* Adjust padding for smaller screens */
+            font-size: 0.8rem; /* Adjust font size for smaller screens */
+            text-align: center;
+            margin-left: 8px;
+        }
+
+        .Golf-for-begyndere {
+            width: 100%; /* Make the section fill the entire screen width */
+            margin: 0; /* Remove horizontal margins */
+            padding: 10px; /* Add some padding for spacing */
+            text-align: center; /* Optional: Align text to the left */
+        }
+    
+        .Golf-for-begyndere h1 {
+            font-size: 1.5rem; /* Adjust font size for small screens */
+        }
+    
+        .Golf-for-begyndere p {
+            font-size: 0.9rem; /* Adjust font size for small screens */
+            line-height: 1.5; /* Adjust line height for readability */
+            
+        }
+        .card-content-udstyr {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items */
+            padding: 2rem 1rem; /* Adjust padding */
+        }
+        .text-content-udstyr {
+            padding: 1rem; /* Adjust padding */
+            text-align: center; /* Center text */
+        }
+        .card-content-range {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items */
+            padding: 2rem 1rem; /* Adjust padding */
+        }
+        .udstyr-card h2{
+            font-size: 2rem; /* Adjust font size for smaller screens */
+            margin-bottom: -4rem; /* Adjust margin for smaller screens */
+            text-align: center; /* Center text */
+        }
+        .udstyr-card p{
+            font-size: 1.2rem; /* Adjust font size for smaller screens */
+            line-height: 1.5; /* Adjust line height for readability */
+            padding: 100px;
+            margin-bottom: -4rem; /* Adjust margin for smaller screens */
+          }
+        .text-content-range {
+            padding: 1rem; /* Adjust padding */
+            text-align: center; /* Center text */
+        }
+        .card-content {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items */
+            padding: 2rem 1rem; /* Adjust padding */
+        }
+        .text-content {
+            padding: 1rem; /* Adjust padding */
+            text-align: center; /* Center text */
+        }
+        .cta-button{
+            margin-left: 0; /* Center the button */
+            margin-top: 1rem; /* Add some space above the button */
+            margin-bottom: 1rem;
+        }
+        .club-guide{
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items */
+            padding: 2rem 1rem; /* Adjust padding */
+        }
+        .grid {
+            grid-template-columns: 1fr; /* Stack items vertically */
+            gap: 10px; /* Adjust gap */
+        }
+        .awards {
+            padding: 2rem 1rem; /* Adjust padding */
+        }
+        .awards-title {
+            font-size: 3rem; /* Adjust font size */
+            margin-bottom: 2rem; /* Adjust margin */
+        }
+        .award-items {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items */
+            gap: 2rem; /* Adjust gap */
+        }
+    }

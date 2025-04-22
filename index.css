@@ -1,0 +1,254 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+.video-container, .greenframe, .cta-buttons {
+    max-width: 100%;
+}
+
+.video-container {
+    display: flex;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    z-index: -1;
+  }
+  /* Buttons at bottom center */
+  .cta-buttons {
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+    z-index: 10;
+  }
+
+  .cta-buttons a {
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+  }
+
+  .cta-buttons a:hover {
+    background: rgba(255, 255, 255, 0.408);
+  }
+
+  .arrow-down {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+  }
+  /* frame */
+  .greenframe{
+    background-color: #31462A;
+    width: 100%;
+    height: 85px;
+    
+  }
+  /* velkomst */
+  .velkomst{
+    text-align: center;
+  }
+  .velkomst h1{
+    text-align: center;
+    font-size: 60px;
+    color: #31462A;
+  }
+  .velkomst p{
+    font-size: 30px;
+  }
+  /* intro */
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdfaf6;
+    padding: 60px 200px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .text-column {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .text-column h2 {
+    font-size: 2rem;
+    color: #2e4a2d;
+    margin-bottom: 20px;
+  }
+  
+  .text-column p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: black;
+  }
+  
+  .read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid #2e4a2d;
+    color: #2e4a2d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #2e4a2d;
+    color: white;
+  }
+  
+  .image-column {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  /* info cards */
+  .info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    margin-top: 55px;
+  }
+  
+  .card {
+    background-color: #2e4a2d;
+    color: white;
+    width: 280px;
+    padding: 30px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 90px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 55px;
+    margin-top: 25px;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .card a {
+    margin-top: auto;
+    padding: 10px 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .card a:hover {
+    background-color: white;
+    color: #2e4a2d;
+  }
+  @media screen and (max-width: 768px) {
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        top: 0;
+        
+      }
+    
+      video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    
+      .velkomst {
+        margin-top: 0; 
+      }
+    .cta-buttons {
+        bottom: 20px;
+        gap: 20px;
+    }
+    .arrow-down {
+        display: none;
+    }
+    .greenframe{
+        display: none;
+    }
+    .velkomst{
+        margin-top: 0px;
+    }
+    .velkomst h1{
+        font-size: 40px;
+    }
+    .velkomst p{
+        font-size: 20px;
+    }
+    .intro {
+        flex-direction: column;
+        padding: 20px;
+        max-width: 100%;
+    }
+    .text-column, .image-column {
+        max-width: 100%;
+        text-align: center;
+    }
+    .read-more-btn {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .info-cards{
+        flex-direction: column;
+        align-items: center;
+        padding: 70px;
+        row-gap: 60px;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        
+    }
+    .card img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+  }

@@ -191,7 +191,6 @@ html, body {
         height: auto;
         z-index: 1;
         top: 0;
-        
       }
     
       video {
@@ -206,6 +205,10 @@ html, body {
     .cta-buttons {
         bottom: 20px;
         gap: 20px;
+    }
+    .cta-buttons a {
+        padding: 10px 20px;
+        font-size: 1rem;
     }
     .arrow-down {
         display: none;
@@ -250,5 +253,102 @@ html, body {
     .card img {
         width: 120px;
         margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    /* Video container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+      top: 0;
+    }
+  
+    video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    /* CTA-knapper */
+    .cta-buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 14px;
+      padding: 0 20px;
+      margin-top: 20px;
+    }
+  
+    .cta-button {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 6px;
+    }
+    .cta-buttons a {
+      padding: 8px 10px;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      text-align: center;
+    }
+  
+    /* Velkomst tekst */
+    .velkomst {
+      margin-top: 10px;
+      padding: 0 20px;
+      text-align: center;
+    }
+  
+    .velkomst h1 {
+      font-size: 30px;
+    }
+  
+    .velkomst p {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  
+    /* Intro-sektion */
+    .intro {
+      flex-direction: column;
+      padding: 20px;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .text-column,
+    .image-column {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .read-more-btn {
+      margin: 20px auto;
+    }
+  
+    /* Info kort */
+    .info-cards {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      row-gap: 40px;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 300px;
+      padding: 20px;
+    }
+  
+    .card img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+  
+    /* Fjerner unødvendige elementer */
+    .arrow-down,
+    .greenframe {
+      display: none;
     }
   }

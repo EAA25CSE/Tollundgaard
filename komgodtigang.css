@@ -444,7 +444,8 @@ html, body {
       /* Responsive Design */
       @media screen and (max-width: 768px) {
         .header-title{
-          font-size: 2rem; 
+          font-size: 1.5rem; 
+          margin-top: -60px;
         }
         .info-cards {
             flex-direction: row; 
@@ -453,18 +454,18 @@ html, body {
             margin-top: -75px;
         }
         .card{
-          width: 145px;
-          height: 270px;
+          width: 125px;
+          height: 230px;
           padding: 15px 10px;
         }
         .card img {
-            width: 80px; /* Adjust image size for smaller screens */
+            width: 60px; /* Adjust image size for smaller screens */
             height: auto;
             margin-bottom: 20px; /* Adjust margin for smaller screens */
             margin-top: 10px; /* Adjust margin for smaller screens */
         }
         .card h3 {
-            font-size: 1rem; /* Adjust font size for smaller screens */
+            font-size: 0.83rem; /* Adjust font size for smaller screens */
             text-align: center;
             margin-left: 10px;
         }
@@ -473,8 +474,8 @@ html, body {
             margin-left: 10px;
         }
         .card a {
-            padding: 5px 10px; /* Adjust padding for smaller screens */
-            font-size: 0.8rem; /* Adjust font size for smaller screens */
+            padding: 2px 7px; /* Adjust padding for smaller screens */
+            font-size: 0.6rem; /* Adjust font size for smaller screens */
             text-align: center;
             margin-left: 8px;
         }
@@ -559,4 +560,99 @@ html, body {
             align-items: center; /* Center items */
             gap: 2rem; /* Adjust gap */
         }
+        .faq-question{
+          font-size: 1.1rem;
+        }
+    }
+    @media screen and (max-width: 430px) {
+      .header-title {
+        font-size: 0.9rem;
+        margin-top: -95px;
+        white-space: nowrap; /* Allow wrapping */
+      }
+    
+      .info-cards {
+        flex-direction: row;
+        align-items: center;
+        margin-top: -60px;
+        
+        text-align: center;
+      }
+    
+      .card {
+        width: 25%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .card img {
+        width: 50px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+    
+      .card h3 {
+        font-size: 0.7rem;
+        
+        white-space: nowrap;
+        margin-left: 0.15rem;
+      }
+    
+      .card p {
+        font-size: 0.5rem;
+        text-align: center;
+        margin-left: 0;
+      }
+    
+      .card a {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+       
+        margin-left: 0;
+      }
+    
+      .text-content,
+      .text-content-range,
+      .text-content-udstyr {
+        padding: 1rem;
+        text-align: center;
+      }
+    
+      .cta-button {
+        margin: 1rem auto;
+        display: block;
+        width: 80%;
+        text-align: center;
+      }
+    
+      .golf-for-begyndere p {
+        font-size: 0.9rem;
+        padding: 0 20px;
+      }
+    
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    
+      .item h3 {
+        font-size: 1rem;
+      }
+    
+      .item p {
+        font-size: 0.85rem;
+      }
+    
+      .award-items {
+        gap: 1.5rem;
+      }
+    
+      .faq-question {
+        font-size: 1rem;
+      }
+    
+      .faq-answer {
+        font-size: 0.9rem;
+      }
     }

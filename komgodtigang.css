@@ -607,9 +607,8 @@ html, body {
       }
     
       .card a {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         padding: 6px 12px;
-       
         margin-left: 0;
       }
     
@@ -642,6 +641,25 @@ html, body {
     
       .item p {
         font-size: 0.85rem;
+      }
+
+      .range-card{
+        margin-bottom: -20px;
+      }
+
+      .priser-wrapper{
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .priser-wrapper h3{
+        font-size: 1.2rem;
+      }
+
+      .priser-wrapper p{
+        font-size: 0.8rem;
+        margin-bottom: 20px;
       }
     
       .award-items {
